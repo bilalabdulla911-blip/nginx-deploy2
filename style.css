@@ -1,0 +1,184 @@
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #f4f6f9;
+    color: #222;
+}
+
+/* Navigation Bar */
+header {
+    background-color: #101c2c;
+    color: white;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    color: #00d084;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #00d084;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(135deg, #101c2c, #087f5b);
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero h2 {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+button {
+    background-color: #00d084;
+    color: #101c2c;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: white;
+}
+
+/* Section Titles */
+section {
+    padding: 50px 8%;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+/* Sports Cards */
+.sports-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.sport-card {
+    background-color: white;
+    padding: 30px 20px;
+    width: 280px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px #00000015;
+    transition: transform 0.3s;
+}
+
+.sport-card:hover {
+    transform: translateY(-8px);
+}
+
+.sport-icon {
+    font-size: 55px;
+    margin-bottom: 15px;
+}
+
+.sport-card h3 {
+    margin-bottom: 12px;
+    color: #087f5b;
+}
+
+.sport-card p {
+    line-height: 1.6;
+}
+
+/* Match Cards */
+.match-card {
+    background-color: white;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 25px;
+    text-align: center;
+    border-left: 5px solid #00b377;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px #00000010;
+}
+
+.match-card h3 {
+    margin-bottom: 12px;
+}
+
+.match-card h2 {
+    color: #087f5b;
+    margin: 12px 0;
+}
+
+/* About Section */
+.about-text {
+    max-width: 750px;
+    margin: auto;
+    text-align: center;
+    line-height: 1.8;
+    font-size: 17px;
+}
+
+/* Footer */
+footer {
+    background-color: #101c2c;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Mobile Responsive Design */
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    nav a {
+        margin: 0 7px;
+        font-size: 14px;
+    }
+
+    .hero h2 {
+        font-size: 30px;
+    }
+
+    .hero {
+        padding: 70px 15px;
+    }
+
+    section {
+        padding: 35px 5%;
+    }
+}
